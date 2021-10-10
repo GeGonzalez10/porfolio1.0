@@ -13,7 +13,7 @@ export const Home = () => {
         <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle}/>   
         </>
-    )
-}
+    );
+};
 
 export default Home;

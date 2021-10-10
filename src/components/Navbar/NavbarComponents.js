@@ -5,8 +5,6 @@ import {Colors} from '../styled.colors'
 
 let {pink, white} = Colors;
 
-
-
 export const Nav = styled.nav`
 background: rgb(63,193,201);
 background: linear-gradient(90deg, rgba(63,193,201,1) 1%, rgba(54,79,107,1) 40%, rgba(44,68,94,1) 100%);
@@ -76,8 +74,6 @@ display: none;
 `
 
 export const NavMenu = styled.ul `
-
-
 display:flex;
 align-items: center;
 list-style: none;
@@ -113,8 +109,8 @@ align-items: center;
     &.active{
         border-bottom: ${p=>p.borderBottom || "3px solid #FC5185"};
     }
-
 `
+
 export const NavBtn = styled.nav`
 display: flex;
 align-items: center;
