@@ -5,7 +5,7 @@ export const SidebarData = [
     },
     {
         title: '💌 Sobre mí',
-        path: 'Home',
+        path: 'AboutMe',
     },
     {
         title: '✨ Experiencia',

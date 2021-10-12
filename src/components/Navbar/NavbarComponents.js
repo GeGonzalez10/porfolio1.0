@@ -10,7 +10,6 @@ background: rgb(63,193,201);
 background: linear-gradient(90deg, rgba(63,193,201,1) 1%, rgba(54,79,107,1) 40%, rgba(44,68,94,1) 100%);
 box-shadow:0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 height: 80px;
-/* margin-top: -80px; */
 display:flex;
 justify-content:center;
 align-items:center;
@@ -45,6 +44,10 @@ font-weight: bold;
 text-decoration:none;
 justify-self:flex-start;
 cursor: pointer;
+
+@media screen and (max-width:335px){
+    font-size: 1rem;
+}
 `
 
 export const MobileIcon = styled.div `
@@ -71,6 +74,19 @@ display: none;
         font-size: 1.8rem;
         cursor:pointer;
     }
+
+    @media screen and (max-width:335px){
+        color: ${white};
+        display: block;
+        margin-top:5px;
+        position: absolute;
+        top: 0;
+        right:0;
+        transform: translate(-100%, 60%);
+        font-size: 1.5rem;
+        cursor:pointer;
+    }
+
 `
 
 export const NavMenu = styled.ul `
@@ -85,7 +101,6 @@ margin-right: -22px;
     display:none;
 }
 
-// For phones
 @media screen and (max-width:768px) {
     display: none; 
 }
@@ -115,12 +130,10 @@ export const NavBtn = styled.nav`
 display: flex;
 align-items: center;
 
-// For tablets
 @media screen and (max-width: 915px) {
     display:none;
 }
 
-// For phones
     @media screen and (max-width: 768px){
         display:none;
     }
