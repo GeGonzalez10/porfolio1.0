@@ -19,11 +19,17 @@ transition: all 0.2s ease-in-out;
 
 &:hover{
     transition: all 0.2s ease-in-out;
-    color: ${({white}) => (white ? "#F5F5F5" : "#FC5185")};
+    color: ${({white}) => (white ? "#FC5185" : "#F5F5F5")};
     background:  ${({primary}) => (primary ? "#FC5185" : "#F5F5F5")};
 }
 `
 
 export const SquareButton = styled(Button)`
 border-radius: 0;
+`
+
+export const PinkButton = styled(Button)`
+&:hover{
+    background: #de1b56;
+}
 `

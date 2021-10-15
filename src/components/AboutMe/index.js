@@ -1,26 +1,29 @@
 import React from 'react'
 
-import {AboutContainer, AboutWrap, AboutRow, Col1, TextWrapper, TopLine, Subtitle, Heading} from './AboutElements'
+import {AboutContainer, AboutWrap, AboutRow, Col1, TextWrapper, TopLine, Subtitle, Heading, Img, Col2, ImgWrap} from './AboutElements'
+import Image from '../../images/aboutme.svg'
 
-export const AboutMe = () => {
+export const AboutMe = ({id, imgStart, topLine,lightText, heading, darkText, description, alt}) => {
     return (
         <>
-        <AboutContainer>
+        <AboutContainer id={id}>
             <AboutWrap>
-                <AboutRow>
+                <AboutRow imgStart={imgStart}>
                     <Col1>
                         <TextWrapper>
-                            <TopLine>Top Line</TopLine>
-                            <Heading>Heading</Heading>
-                            <Subtitle>Subtitle</Subtitle>
-                            {/* <BtnWrap to='Home'><Buttom>Buttom</Buttom></BtnWrap> */}
+                            <TopLine >{topLine}</TopLine>
+                            <Heading lightText={lightText}>{heading}</Heading>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
                         </TextWrapper>
                     </Col1>
+                    <Col2>
+                        <ImgWrap> <Img src={Image} alt={alt}/></ImgWrap>
+                    </Col2>
                 </AboutRow>
             </AboutWrap>
         </AboutContainer>  
         </>
     )
-}
+};
 
 export default AboutMe;

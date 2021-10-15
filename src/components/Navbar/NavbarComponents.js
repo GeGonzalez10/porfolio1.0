@@ -6,7 +6,6 @@ import {Colors} from '../styled.colors'
 let {pink, white} = Colors;
 
 export const Nav = styled.nav`
-background: rgb(63,193,201);
 background: linear-gradient(90deg, rgba(63,193,201,1) 1%, rgba(54,79,107,1) 40%, rgba(44,68,94,1) 100%);
 box-shadow:0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 height: 80px;
