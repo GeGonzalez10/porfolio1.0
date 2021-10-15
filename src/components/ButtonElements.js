@@ -26,6 +26,9 @@ transition: all 0.2s ease-in-out;
 
 export const SquareButton = styled(Button)`
 border-radius: 0;
+&:hover{
+    background: #de1b56;
+}
 `
 
 export const PinkButton = styled(Button)`
