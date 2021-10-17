@@ -7,10 +7,10 @@ export const SidebarData = [
         title: '💌 Sobre mí',
         path: 'AboutMe',
     },
-    {
+   /*  {
         title: '✨ Experiencia',
         path: 'Experience',
-    },
+    }, */
     {
         title: '🔭 Proyectos',
         path: 'Proyects',

@@ -16,7 +16,7 @@ export const Navbar = ({toggle}) => {
                 <NavMenu>
                     <NavItem><NavLinks to="Home">Home</NavLinks></NavItem>
                     <NavItem><NavLinks to="About">Sobre mí</NavLinks></NavItem>
-                    <NavItem><NavLinks to="Experience">Experiencia</NavLinks></NavItem>
+                    {/* <NavItem><NavLinks to="Experience">Experiencia</NavLinks></NavItem> */}
                     <NavItem><NavLinks to="Proyects">Proyectos</NavLinks></NavItem>                 
                 </NavMenu>
                 <NavBtn> <NavBtnLink to="/Contact">Contacto</NavBtnLink></NavBtn>

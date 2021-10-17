@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import { HomeSection } from '../components/HomeSection';
 import { AboutMe } from '../components/AboutMe';
 import { AboutDataObj } from '../components/AboutMe/AboutData';
+import Proyects from '../components/Proyects';
 
 export const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -17,6 +18,7 @@ export const Home = () => {
         <Navbar toggle={toggle}/>
         <HomeSection/>
         <AboutMe {...AboutDataObj}/>
+        <Proyects/>
         </>
     );
 };
