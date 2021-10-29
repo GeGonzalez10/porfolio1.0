@@ -15,6 +15,7 @@ import Hotel from '../../images/Hotels2.jpg'
     pText: 'Frontend para página web usando ReactJs: proyecto de práctica usando Styled Componets, MaterialUi',
     icon: <FaReact/>, 
     icon_2:<SiStyledcomponents/>,
+    href: "https://github.com/GeGonzalez10/TiendaOnline"
     }, 
     {
     title:'Landing Page - New York Assistance',
@@ -24,6 +25,7 @@ import Hotel from '../../images/Hotels2.jpg'
     pText: 'Frontend de Página Web para NY Assistance. Diseño responsive, animaciones en CSS',
     icon: <FaCss3Alt/>,
     icon_2: <DiMaterializecss/>,
+    href: "https://github.com/GeGonzalez10/NyAssistance"
     }, 
     {
     title:'Guia de Hoteles',
@@ -33,6 +35,7 @@ import Hotel from '../../images/Hotels2.jpg'
     pText: 'Diseño de Página Web con Bootstrap. Diseño responsive, uso de SASS, Grunt',
     icon: <FaBootstrap/>,
     icon_2: <FaSass/>,
+    href: "https://github.com/GeGonzalez10/Guia-de-Hoteles"
     }, 
     
 ];

@@ -1,5 +1,5 @@
 export const AboutDataObj = {
-    id : 'about',
+    id : 'About',
     lightText: false,
     lightTextDesc: true,
     topLine: 'Desarrolladora Web en construcción🤓',

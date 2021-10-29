@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { CardResponsive, ProyectsContainer, ImgWrap, Img, PrWrap, expWrap, PrTextWrap, PrText,H, H5, Icon, Subtitle, ProyectsWrap, ProyectsDiv, } from './ProyectsElements';
+import { CardResponsive, ProyectsContainer, ImgWrap, Img, PrWrap, expWrap, PrTextWrap, PrText,H, H5, Icon, Subtitle, ProyectsWrap, ProyectsDiv, A } from './ProyectsElements';
 
 
 import { proyects } from './ProyectsData';
@@ -13,7 +13,7 @@ let {img} = proyects;
 export const Proyects = () => {
     return (
         <>
-        <ProyectsDiv>
+        <ProyectsDiv id='Proyects'> 
             <ProyectsWrap>
                 
                 <H> Proyectos</H>
@@ -27,9 +27,8 @@ export const Proyects = () => {
                             </ImgWrap>
                             <PrWrap>
                                 <expWrap>
-                                    <Subtitle darkText='true'>{item.title} {/* <Icon>{item.icon} {item.icon_2}</Icon> */} </Subtitle>
+                                <A href={item.href}><Subtitle darkText='true'>{item.title} {/* <Icon>{item.icon} {item.icon_2}</Icon> */} </Subtitle></A>
                                     <PrTextWrap>
-                                        
                                         <PrText><H5>{item.pText}</H5></PrText>
                                     </PrTextWrap>
                                 </expWrap>
@@ -39,7 +38,6 @@ export const Proyects = () => {
                 })}
                     <CarouselComponent/>
                 </ProyectsContainer>     
-                {/* <ImageSlider slides={SliderData}/> */}
             </ProyectsWrap>
         </ProyectsDiv>
         </>

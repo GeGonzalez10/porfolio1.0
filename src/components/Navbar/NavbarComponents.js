@@ -24,6 +24,8 @@ z-index:10;
 `
 
 export const NavbarContainer = styled.div`
+background: linear-gradient(90deg, rgba(63,193,201,1) 1%, rgba(54,79,107,1) 40%, rgba(44,68,94,1) 100%);
+position: fixed;
 display:flex;
 justify-content:space-between;
 width:100%;
@@ -138,7 +140,7 @@ align-items: center;
     }
 `
 
-export const NavBtnLink = styled(LinkRouter)`
+export const NavBtnLink = styled(LinkScroll)`
     background: ${pink};
     color:${white};
     font-size:16px;

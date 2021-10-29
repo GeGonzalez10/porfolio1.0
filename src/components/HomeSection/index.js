@@ -11,7 +11,7 @@ export const HomeSection = () => {
 
     return (
         <>
-        <HomeContainer>
+        <HomeContainer id='Home'> 
             <HomeBg>
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
             </HomeBg>
@@ -22,7 +22,7 @@ export const HomeSection = () => {
                     <SquareButton to='Contact' onMouseEnter={onHover} onMouseLeave={onHover}>
                         Contáctame {hover ? <ArrowForward/> : <ArrowRight/>}
                     </SquareButton>
-                    <ReadMoreLink to='AboutMe'>Leer más</ReadMoreLink>
+                    <ReadMoreLink to='About'>Leer más</ReadMoreLink>
                 </BtnWrapper>
             </HomeContent>
         </HomeContainer>  

@@ -9,6 +9,14 @@ import forth from "../../../images/Home-tiendaonline.png";
 import fifth from "../../../images/Hotels.jpg";
 import AppImage from "./AppImage";
 
+const Subtitle = styled.p`
+max-width: 320px;
+margin-bottom: 10px;
+font-size: 18px;
+line-height: 24px;
+color: white;
+`
+
 const forwardArrowAnimation = keyframes`
 /* 0%{
     left: 50%;
@@ -161,6 +169,7 @@ const CarouselComponent = () => {
           </StyledArrowContainer>
         )}
       </StyledCarouselContainer>
+      
       <StyledIndicatorContainer>
         {images.map((img, index) => (
           <StyledIndicator

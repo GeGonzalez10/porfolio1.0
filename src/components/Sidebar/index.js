@@ -20,7 +20,7 @@ export const Sidebar = ({isOpen, toggle}) => {
                     })}
                 </SidebarMenu>
                 <SidebarBtn>
-                    <SidebarRoute to="/Contact"> Contacto</SidebarRoute>
+                    <SidebarRoute to="Contact"> Contacto</SidebarRoute>
                 </SidebarBtn>
             </SidebarWrapper>
         </SidebarContainer>

@@ -46,7 +46,7 @@ export const CardResponsive = styled.div`
 display:flex;
 
 flex-direction: column;
-row-gap: 10px;
+row-gap: 10px; 
 background-color: transparent;
 
 @media screen and (max-widh: 768px){
@@ -103,14 +103,20 @@ column-gap: 5px;
 
 export const H5 = styled.h5`
 font-size: 12px;
-color: black;
+color: #2c2b2b;
 `
 export const H = styled(Heading)`
 padding-left: 24px;
-margin-right: auto;
-margin-left: auto;
+margin: 50px 5% 50px;
 max-width: 1100px;
 ` 
+
+export const A = styled.a`
+cursor: pointer;
+text-decoration:none;
+list-style:none;
+`
+
 
 export const Subtitle = styled.p`
 max-width: 320px;
