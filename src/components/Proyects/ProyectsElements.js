@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Colors } from '../styled.colors';
 import {Heading} from '../AboutMe/AboutElements'
 
-let { white} = Colors;
+let {pink, white} = Colors;
 
 export const ProyectsDiv = styled.div`
 background: rgb(54,79,107);
@@ -57,6 +57,7 @@ background-color: transparent;
 
 export const ImgWrap = styled.div`
 box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+height: 155px;
 `
 
 export const Img = styled.img`
@@ -84,6 +85,8 @@ row-gap:5px;
 
 export const PrTextWrap = styled.div`
 flex-direction: row;
+width: 320px;
+margin-bottom: 10px;
 `
 
 export const PrText = styled.div`
@@ -107,5 +110,23 @@ padding-left: 24px;
 margin-right: auto;
 margin-left: auto;
 max-width: 1100px;
+` 
 
+export const Subtitle = styled.p`
+max-width: 320px;
+margin-bottom: 10px;
+font-size: 18px;
+line-height: 24px;
+color: ${({darkText}) =>(darkText ? "#364F6B" : "#F5F5F5")}
+`
+
+export const Icon = styled.div`
+width: 100px;
+font-size: 30px;
+justify-content:space-between;
+font-weight: 600;
+color: ${pink} ;
+@media screen and (max-width: 768px){
+    font-size: 32px
+}
 `

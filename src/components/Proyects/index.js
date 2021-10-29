@@ -1,13 +1,14 @@
 import React from 'react'
-import { CardResponsive, ProyectsContainer, ImgWrap, Img, PrWrap, expWrap, PrTextWrap, PrText,H, H5, ProyectsWrap, ProyectsDiv, } from './ProyectsElements';
 
-import {TopLine, Heading, Subtitle} from '../AboutMe/AboutElements'
-import { ImageSlider } from './Slider/ImageSlider';
-import {SliderData} from './Slider/SliderData'
+import { CardResponsive, ProyectsContainer, ImgWrap, Img, PrWrap, expWrap, PrTextWrap, PrText,H, H5, Icon, Subtitle, ProyectsWrap, ProyectsDiv, } from './ProyectsElements';
+
 
 import { proyects } from './ProyectsData';
 
-import img from '../../images/prueba.png'
+
+import CarouselComponent from './Carousel-Img/CarouselComponents';
+
+let {img} = proyects;
 
 export const Proyects = () => {
     return (
@@ -22,12 +23,13 @@ export const Proyects = () => {
                     return (
                         <CardResponsive key={item._id}>
                             <ImgWrap>
-                                <Img src={img}/>
+                                <Img src={item.img}/>
                             </ImgWrap>
                             <PrWrap>
                                 <expWrap>
-                                    <Subtitle darkText='true'>{item.title}</Subtitle>
+                                    <Subtitle darkText='true'>{item.title} {/* <Icon>{item.icon} {item.icon_2}</Icon> */} </Subtitle>
                                     <PrTextWrap>
+                                        
                                         <PrText><H5>{item.pText}</H5></PrText>
                                     </PrTextWrap>
                                 </expWrap>
@@ -35,10 +37,9 @@ export const Proyects = () => {
                         </CardResponsive>
                     )
                 })}
-                </ProyectsContainer>
-
-                
-
+                    <CarouselComponent/>
+                </ProyectsContainer>     
+                {/* <ImageSlider slides={SliderData}/> */}
             </ProyectsWrap>
         </ProyectsDiv>
         </>
