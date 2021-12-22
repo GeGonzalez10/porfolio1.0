@@ -7,7 +7,7 @@ export const Navbar = ({toggle}) => {
     <>
         <Nav>
             <NavbarContainer>
-                <NavLogo to='/'>
+                <NavLogo to='Home' spy={true} smooth={true} duration={500}>
                     Genesis Gonzalez
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
