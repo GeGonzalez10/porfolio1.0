@@ -24,7 +24,7 @@ export const RRSS = ({id, imgStart, topLine, lightText, heading, darkText, descr
                         <TextWrapper>
                                 <Links href="https://github.com/GeGonzalez10"><Icons darkText={darkText}><VscGithub/></Icons>GeGonzalez10</Links>
 
-                                <Links href="https://linkedin.com"><Icons darkText={darkText}><GrLinkedinOption/></Icons>in/GeGonzalez10/</Links>
+                                <Links href="https://www.linkedin.com/in/genesis-gonz%C3%A1lez-60bb63244"><Icons darkText={darkText}><GrLinkedinOption/></Icons>in/GeGonzalez10/</Links>
                             
                                 <Links href="https://www.google.com/maps/place/Caracas,+Distrito+Capital/@10.4683612,-67.0304525,11z/data=!3m1!4b1!4m5!3m4!1s0x8c2a58adcd824807:0x93dd2eae0a998483!8m2!3d10.4805937!4d-66.9036063"><Icons darkText={darkText}><VscLocation/></Icons>Caracas, Venezuela - Remote</Links>
 
